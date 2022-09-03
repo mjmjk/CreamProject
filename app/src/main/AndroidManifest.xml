@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mjk.creamproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="기부유"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MyPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DealRecord">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyPage" />
+        </activity>
+        <activity android:name=".DealItemView" />
+        <activity android:name=".GiveOption">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyPage" />
+        </activity>
+        <activity android:name=".JoinOne" />
+        <activity android:name=".Left">
+
+            </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Medal" />
+        <activity android:name=".Right" />
+        <activity android:name=".SendOne">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyPage" />
+        </activity>
+        <activity android:name=".SendTwo" />
+
+        <activity android:name=".RankRecord" />
+        <activity android:name=".RankItem" />
+        <activity android:name=".SendServerOne" />
+        <activity android:name=".SendServerTwo"></activity>
+        <activity android:name=".JoinToast"></activity>
+    </application>
+
+</manifest>
